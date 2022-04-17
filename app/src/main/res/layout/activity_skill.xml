@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".skill">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header2"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        >
+        <Button
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:text="Profil"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:id="@+id/profil_2"
+            />
+        <Button
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:text="Skill"
+            android:textColor="#0C71E0"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/profil_2"
+            android:id="@+id/skill_2"
+            />
+        <Button
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:text="lainnya"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/skill_2"
+            android:id="@+id/lain_2"
+            />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header2"
+        android:background="#3A3B3C">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="50px">
+
+            <TextView
+                android:id="@+id/kemampuann"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KEMAMPUAN : "
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+            <!-- kemampuan 1-->
+            <RelativeLayout
+                android:id="@+id/kemampuan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kemampuann"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="25px"
+                android:layout_marginRight="50px">
+
+                <TextView
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFF" />
+
+                <TextView
+                    android:layout_width="480px"
+                    android:layout_height="wrap_content"
+                    android:background="#10A5F5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="MS Office" />
+            </RelativeLayout>
+
+            <!-- kemampuan 2-->
+            <RelativeLayout
+                android:id="@+id/kemampuan2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kemampuan1"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="25px"
+                android:layout_marginRight="50px">
+
+                <TextView
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFF" />
+
+                <TextView
+                    android:layout_width="420px"
+                    android:layout_height="wrap_content"
+                    android:background="#10A5F5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="MYSQL" />
+            </RelativeLayout>
+
+            <!-- kemampuan 3-->
+            <RelativeLayout
+                android:id="@+id/kemampuan3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kemampuan2"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="25px"
+                android:layout_marginRight="50px">
+
+                <TextView
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFF" />
+
+                <TextView
+                    android:layout_width="450px"
+                    android:layout_height="wrap_content"
+                    android:background="#10A5F5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="HTML" />
+            </RelativeLayout>
+
+            <!-- kemampuan 4-->
+            <RelativeLayout
+                android:id="@+id/kemampuan4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kemampuan3"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="25px"
+                android:layout_marginRight="50px">
+
+                <TextView
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFF" />
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="wrap_content"
+                    android:background="#10A5F5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="CSS" />
+            </RelativeLayout>
+
+            <!-- kemampuan 5-->
+            <RelativeLayout
+                android:id="@+id/kemampuan5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kemampuan4"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="25px"
+                android:layout_marginRight="50px">
+
+                <TextView
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFF" />
+
+                <TextView
+                    android:layout_width="450px"
+                    android:layout_height="wrap_content"
+                    android:background="#10A5F5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="PHP" />
+            </RelativeLayout>
+
+            <!-- kemampuan 6-->
+            <RelativeLayout
+                android:id="@+id/kemampuan6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kemampuan5"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="25px"
+                android:layout_marginRight="50px">
+
+                <TextView
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFF" />
+
+                <TextView
+                    android:layout_width="500px"
+                    android:layout_height="wrap_content"
+                    android:background="#10A5F5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Java" />
+            </RelativeLayout>
+
+            <!-- kemampuan 7-->
+            <RelativeLayout
+                android:id="@+id/kemampuan7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kemampuan6"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="25px"
+                android:layout_marginRight="50px">
+
+                <TextView
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFF" />
+
+                <TextView
+                    android:layout_width="400px"
+                    android:layout_height="wrap_content"
+                    android:background="#10A5F5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Python" />
+            </RelativeLayout>
+
+            <!-- kemampuan 8-->
+            <RelativeLayout
+                android:id="@+id/kemampuan8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kemampuan7"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="25px"
+                android:layout_marginRight="50px">
+
+                <TextView
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFF" />
+
+                <TextView
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:background="#10A5F5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Adobe Photoshop"
+                    android:textSize="32px" />
+            </RelativeLayout>
+
+            <!-- kemampuan 9-->
+            <RelativeLayout
+                android:id="@+id/kemampuan9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kemampuan8"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="25px"
+                android:layout_marginRight="50px">
+
+                <TextView
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFF" />
+
+                <TextView
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:background="#10A5F5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="CorelDraw"/>
+            </RelativeLayout>
+
+            <!-- kemampuan 10-->
+            <RelativeLayout
+                android:id="@+id/kemampuan10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kemampuan9"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="25px"
+                android:layout_marginRight="50px">
+
+                <TextView
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFF" />
+
+                <TextView
+                    android:layout_width="540px"
+                    android:layout_height="wrap_content"
+                    android:background="#10A5F5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="TWRP"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

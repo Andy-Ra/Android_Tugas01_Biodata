@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".lain">
+
+    <LinearLayout
+        android:id="@+id/header3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+
+        <Button
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:text="Profil"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:id="@+id/profil_3"
+            />
+        <Button
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:text="Skill"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/profil_3"
+            android:id="@+id/skill_3"
+            />
+        <Button
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:text="lainnya"
+            android:textColor="#0C71E0"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/skill_3"
+            android:id="@+id/lain_3"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header3"
+        android:background="#3A3B3C">
+
+        <Button
+            android:id="@+id/btn_pesan"
+            android:layout_width="480px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="50px"
+            android:backgroundTint="#121212"
+            android:drawableLeft="@drawable/ic_baseline_message_24"
+            android:gravity="left"
+            android:padding="40px"
+            android:text="pesan"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_alignRight="@id/btn_pesan"
+            android:id="@+id/btn_simpan"
+            android:layout_width="480px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="50px"
+            android:backgroundTint="#121212"
+            android:drawableLeft="@drawable/ic_baseline_save_24"
+            android:gravity="left"
+            android:padding="40px"
+            android:text="simpan"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_kluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="50px"
+            android:backgroundTint="#121212"
+            android:padding="40px"
+            android:text="KELUAR"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

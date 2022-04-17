@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/header1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        >
+
+        <Button
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:text="Profil"
+            android:textColor="#0C71E0"
+            android:background="@android:color/transparent"
+            android:id="@+id/profil_1"
+            />
+
+        <Button
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:text="Skill"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/profil_1"
+            android:id="@+id/skill_1"
+            />
+        <Button
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:text="lainnya"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/skill_1"
+            android:id="@+id/lain_1"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3A3B3C"
+        android:layout_below="@id/header1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="100px"
+            android:id="@+id/layout1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:src="@drawable/pp"
+                android:id="@+id/pp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="4px"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ivan Andy Ramadhan"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:id="@+id/nama"
+                android:layout_below="@id/pp"
+                android:layout_marginTop="60px"
+                android:textSize="40px"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pencari Cuan"
+                android:textAlignment="center"
+                android:layout_below="@id/nama"
+                android:layout_marginTop="60px"
+                android:id="@+id/detail"
+                android:textSize="40px"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_marginTop="100px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tentang">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TENTANG : "
+                    android:textStyle="bold"
+                    android:id="@+id/aboutt"
+                    android:textSize="40px"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aboutt"
+                    android:id="@+id/abouttt"
+                    android:layout_marginTop="30px"
+                    android:text="Nama saya Ivan Andy Ramadhan dan biasa dipanggil Andy, saya tinggal dan lahir di Kota Malang dan sekarang saya berumur 20 tahun
+                                  \n\nSaya adalah seseorang yang memiliki ketertarikan dengan pengembangan sebuah aplikasi dan web, pengoprekan pada sebuah Android serta dunia yang berbau bau dengan cuan.
+                                  \n\n dan saya sekarang mengikuti kegiatan belajar pada Kampus STIKI MALANG guna mengasah kemampuan saya dalam mengembangakan sebuah aplikasi dan web serta agar bisa mendapatkan berbagai pengalaman serta ilmu tambahan"
+                    android:textSize="40px"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100px"
+                    android:text="HOBI : "
+                    android:layout_below="@id/abouttt"
+                    android:textStyle="bold"
+                    android:id="@+id/hobi"
+                    android:textSize="40px"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hobi"
+                    android:layout_marginTop="30px"
+                    android:text="- Bermain Game
+                                  \n- Ngoding
+                                  \n- Tidur
+                                  \n- Nongkrong
+                                  \n- Cari Cuan"
+                    android:textSize="40px"/>
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
